@@ -3,10 +3,10 @@
     <div class="welcome-container">
       <div>
             <h1>
-                Welcome to opportunity 
+                {{  titel }}
             </h1>
             <h2>
-                {{  currentDate }}
+                {{ currentDate }}
             </h2>
     
      
@@ -41,11 +41,13 @@
     name: 'WelcomeScreen',
       data() {
         return {
+          titel: 'Welcome to Opportunity',
           currentDate: new Date().toLocaleDateString()
-        }
-      },
+        };
+      }
   }
   </script>
+  
   
   <style scoped>
    main{
