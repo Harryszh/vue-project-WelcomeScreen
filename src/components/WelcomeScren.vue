@@ -6,7 +6,7 @@
                 Welcome to opportunity 
             </h1>
             <h2>
-                08.08.2021
+                {{  currentDate }}
             </h2>
     
      
@@ -39,6 +39,11 @@
   <script>
   export default {
     name: 'WelcomeScreen',
+      data() {
+        return {
+          currentDate: new Date().toLocaleDateString()
+        }
+      },
   }
   </script>
   
