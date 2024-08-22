@@ -3,7 +3,7 @@
     <div class="welcome-container">
       <div>
             <h1>
-                {{  titel }}
+                {{ titel }}
             </h1>
             <h2>
                 {{ currentDate }}
