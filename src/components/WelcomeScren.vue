@@ -44,7 +44,14 @@
           titel: 'Welcome to Opportunity',
           currentDate: new Date().toLocaleDateString()
         };
-      }
+      },
+      methods: {
+        async fetchData(){
+          const GoogleAPI = "https://sheets.googleapis.com/v4/spreadsheets/1w5snE8PuhHY7dHx5wffgpR43kgA93xoUSMOHdAJu5eQ/values:batchGet?ranges=A1%3AE100&valueRenderOption=FORMATTED_VALUE&key=AIzaSyD3lqHbcgBuvJSlfkVprVntJXSW0VVv2w4"
+        }
+        
+      },
+      
   }
   </script>
   
